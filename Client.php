@@ -1683,4 +1683,14 @@ class Credis_Client
 
         return $out;
     }
+
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return string The string representation of the object.
+     */
+    public function __toString()
+    {
+        return $this->host . ':' . $this->port;
+    }
 }
